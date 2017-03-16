@@ -5,4 +5,4 @@
 Please modify THE_MOVIE_DB_API_KEY at "app\build.gradle".
 
 # Ð§¹ûÍ¼
-![Movies](./screenshot/main.png) ![Movies](./screenshot/detail.png) ![Movies](./screenshot/images.png) ![Movies](./screenshot/photoView.png)
+![Movies](./screenshot/main.jpg) ![Movies](./screenshot/detail.jpg) ![Movies](./screenshot/images.jpg) ![Movies](./screenshot/photoView.jpg)
