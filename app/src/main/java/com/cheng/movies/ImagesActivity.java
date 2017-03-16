@@ -42,7 +42,7 @@ public class ImagesActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("剧照");
+        getSupportActionBar().setTitle(getResources().getString(R.string.still));
 
         Intent intent = getIntent();
         if (intent != null) {
