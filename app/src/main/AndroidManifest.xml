@@ -10,8 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,13 +22,18 @@
         </activity>
         <activity
             android:name=".DetailActivity"
-            android:label="@string/title_activity_detail">
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cheng.movies.MainActivity" />
         </activity>
-        <activity android:name=".ImagesActivity" />
-        <activity android:name=".Photoview" />
+        <activity
+            android:name=".ImagesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photoview"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
