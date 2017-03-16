@@ -15,6 +15,7 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:baselineAligned="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -31,7 +32,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true" />
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/still"/>
             </LinearLayout>
 
 
@@ -45,7 +47,7 @@
                     android:id="@+id/tv_release_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
+                    android:layout_gravity="end"
                     android:layout_marginTop="40dp"
                     android:textSize="30sp" />
 
@@ -53,7 +55,7 @@
                     android:id="@+id/tv_runtime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
+                    android:layout_gravity="end"
                     android:textSize="25sp"
                     android:textStyle="bold|italic" />
 
@@ -61,7 +63,7 @@
                     android:id="@+id/tv_vote_average"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right" />
+                    android:layout_gravity="end" />
 
             </LinearLayout>
 
@@ -71,16 +73,16 @@
             android:id="@+id/tv_overview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="@dimen/text_margin" />
 
         <Button
             android:id="@+id/btn_images"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin"
             android:background="#00000000"
-            android:text="查看更多剧照"
+            android:text="@string/more"
             android:textColor="#46bd59" />
     </LinearLayout>
 

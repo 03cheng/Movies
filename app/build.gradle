@@ -18,7 +18,7 @@ android {
         }
     }
     buildTypes.each {
-        it.buildConfigField 'String', 'THE_MOVIE_DB_API_KEY', "\"...\""
+        it.buildConfigField 'String', 'THE_MOVIE_DB_API_KEY', "\"4c2942d2ab1660dbe66bbf3aa6973a16\""
     }
 }
 
@@ -34,7 +34,7 @@ dependencies {
     compile 'com.android.support:design:25.2.0'
     compile files('libs/okhttp-3.2.0.jar')
     compile 'com.android.support:support-v4:25.2.0'
-    compile 'com.github.bumptech.glide:glide:3.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.bm.photoview:library:1.4.1'
 
     testCompile 'junit:junit:4.12'
