@@ -1,8 +1,8 @@
 # Movies
-Ò»¿îµçÓ°½éÉÜ APP£¬ ¿Í»§¶Ë´Ó THE MOVIE DB »ñÈ¡Ó°ÊÓĞÅÏ¢ºÍ¾çÕÕµÈÊı¾İ¡£
+ä¸€æ¬¾ç”µå½±ä»‹ç» APPï¼Œ å®¢æˆ·ç«¯ä» THE MOVIE DB è·å–å½±è§†ä¿¡æ¯å’Œå‰§ç…§ç­‰æ•°æ®ã€‚
 
-Çë×ÔĞĞĞŞ¸Ä buile.gradle ÖĞ THE_MOVIE_DB_API_KEY
+è¯·è‡ªè¡Œä¿®æ”¹ buile.gradle ä¸­ THE_MOVIE_DB_API_KEY
 Please modify THE_MOVIE_DB_API_KEY at "app\build.gradle".
 
-# Ğ§¹ûÍ¼
-![Movies](./main.png) ![Movies](./detail.png) ![Movies](./images.png) ![Movies](./photoView.png)
+# æ•ˆæœå›¾
+![Movies](./screenshot/main.png) ![Movies](./screenshot/detail.png) ![Movies](./screenshot/images.png) ![Movies](./screenshot/photoView.png)
