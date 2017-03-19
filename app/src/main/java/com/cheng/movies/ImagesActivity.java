@@ -13,6 +13,8 @@ import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.cheng.movies.adapter.LinearAdapter;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

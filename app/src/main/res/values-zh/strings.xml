@@ -4,4 +4,7 @@
     <string name="action_settings">设置</string>
     <string name="more">查看更多剧照</string>
     <string name="still">剧照</string>
+    <string name="action_send">反馈</string>
+    <string name="action_share">分享</string>
+    <string name="action_night">夜间模式</string>
 </resources>

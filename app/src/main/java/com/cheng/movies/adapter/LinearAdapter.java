@@ -1,4 +1,4 @@
-package com.cheng.movies;
+package com.cheng.movies.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,17 +8,20 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.bumptech.glide.Glide;
+import com.cheng.movies.R;
 
 import java.util.List;
 
+/**
+ * Created by asus on 2017-03-12.
+ */
 
-public class GridAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener, View.OnLongClickListener {
+public class LinearAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
     private Context context;
-    private List<Movie> datas;
+    private List<String> datas;
 
     public interface OnRecyclerViewItemClickListener {
         void onItemClick(View view);
-        void onItemLongClick(View view);
     }
 
     private OnRecyclerViewItemClickListener mOnItemClickListener = null;
@@ -27,7 +30,7 @@ public class GridAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
         mOnItemClickListener = listener;
     }
 
-    public GridAdapter(Context context, List<Movie> datas) {
+    public LinearAdapter(Context context, List<String> datas) {
         this.context = context;
         this.datas = datas;
     }
@@ -38,15 +41,14 @@ public class GridAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
         MyViewHolder holder = new MyViewHolder(view);
 
         view.setOnClickListener(this);
-        view.setOnLongClickListener(this);
         return holder;
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof MyViewHolder) {
-            Glide.with(context).load("http://image.tmdb.org/t/p/w200_and_h300_bestv2"
-                    + datas.get(position).getPosterPath()).into(((MyViewHolder) holder).imageButton);
+            Glide.with(context).load("http://image.tmdb.org/t/p/w533_and_h300_bestv2"
+                    + datas.get(position)).into(((MyViewHolder) holder).imageButton);
         }
     }
 
@@ -60,14 +62,6 @@ public class GridAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
         if (mOnItemClickListener != null) {
             mOnItemClickListener.onItemClick(v);
         }
-    }
-
-    @Override
-    public boolean onLongClick(View v) {
-        if (mOnItemClickListener != null) {
-            mOnItemClickListener.onItemLongClick(v);
-        }
-        return false;
     }
 
     private class MyViewHolder extends RecyclerView.ViewHolder {

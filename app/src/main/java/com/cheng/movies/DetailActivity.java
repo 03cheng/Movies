@@ -17,11 +17,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.cheng.movies.bean.Movie;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import static com.cheng.movies.MainActivity.movies;
+import static com.cheng.movies.PageFragment.movies;
 
 public class DetailActivity extends AppCompatActivity {
     private Movie movie;

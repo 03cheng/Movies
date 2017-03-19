@@ -18,7 +18,6 @@ public class Photoview extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photoview);
 
-        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.black));
         }

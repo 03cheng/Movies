@@ -1,4 +1,4 @@
-package com.cheng.movies;
+package com.cheng.movies.bean;
 
 
 import java.util.List;
